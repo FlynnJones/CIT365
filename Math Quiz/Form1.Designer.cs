@@ -1,4 +1,6 @@
-﻿namespace Math_Quiz
+﻿using System;
+
+namespace Math_Quiz
 {
     partial class Form1
     {
@@ -53,6 +55,7 @@
             this.dividedLeftLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.currentDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
@@ -63,7 +66,7 @@
             // 
             this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeLabel.Location = new System.Drawing.Point(284, 23);
+            this.timeLabel.Location = new System.Drawing.Point(332, 23);
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(191, 50);
             this.timeLabel.TabIndex = 0;
@@ -72,7 +75,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(116, 36);
+            this.label1.Location = new System.Drawing.Point(161, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 37);
             this.label1.TabIndex = 1;
@@ -292,11 +295,21 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // currentDate
+            // 
+            this.currentDate.AutoSize = true;
+            this.currentDate.Location = new System.Drawing.Point(12, 9);
+            this.currentDate.Name = "currentDate";
+            this.currentDate.Size = new System.Drawing.Size(154, 20);
+            this.currentDate.TabIndex = 21;
+            this.currentDate.Text = "23 September, 2017";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 491);
+            this.Controls.Add(this.currentDate);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.quotient);
             this.Controls.Add(this.label12);
@@ -361,5 +374,6 @@
         private System.Windows.Forms.Label dividedLeftLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label currentDate;
     }
 }

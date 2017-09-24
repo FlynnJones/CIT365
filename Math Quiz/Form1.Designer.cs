@@ -302,7 +302,8 @@ namespace Math_Quiz
             this.currentDate.Name = "currentDate";
             this.currentDate.Size = new System.Drawing.Size(154, 20);
             this.currentDate.TabIndex = 21;
-            this.currentDate.Text = "23 September, 2017";
+            var currentDateToday = DateTime.Now;
+            this.currentDate.Text = currentDateToday.ToString("dd MMMM, yyyy");
             // 
             // Form1
             // 
